@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 120px auto 0;
+  display: flex;
+  justify-content: center;
+  height: 280px;
+  width: 470px;
+  box-shadow: 0 48px 100px 0 rgba(17, 12, 46, 0.15);
+}
+
+.container-1 {
+  display: flex;
+  position: relative;
+}
+
+img {
+  width: 250px;
+  clip-path: inset(0 8%);
+  transform: scale(1.1);
+}
+
+h1,
+h2,
+h3 {
+  margin-left: 5px;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 14px;
+  color: rgb(16, 206, 16);
+}
+
+.description {
+  font-size: 11px;
+  margin: 0 5px;
+}
+
+.sub-container-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.sub-container-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.head-size {
+  font-size: 13px;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+#sizes {
+  margin-right: 20px;
+}
+
+span {
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: flex;
+  vertical-align: middle;
+  position: absolute;
+  align-items: center;
+  top: -12.5px;
+  z-index: 1;
+}
+
+.size {
+  padding: 2px 10px;
+  width: 35px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(240, 240, 240);
+  outline: none;
+  text-align: end;
+}
+
+.size::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+label p {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.color-1 {
+  background-color: rgb(110, 255, 255);
+}
+
+.color-2 {
+  background-color: rgb(255, 255, 0);
+}
+
+.color-3 {
+  background-color: pink;
+}
+
+.color-4 {
+  background-color: rgb(0, 255, 170);
+}
+
+
+.color-1,
+.color-2,
+.color-3,
+.color-4 {
+  right: calc(-10px);
+  position: relative;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 30px;
+  transition: 0.15s;
+  font-size: 14px;
+  background-color: blue;
+  color: white;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+label {
+  cursor: pointer;
+}
+
+#sub-container-3 input:checked+p {
+  font-weight: 650;
+  color: black;
+}
+
+#sub-container-3 input[type="radio"] {
+  display: none;
+}
+
+#sub-container-4 {
+  height: 28px;
+}
+
+#sub-container-4 input[type="radio"] {
+  right: calc(-10px);
+  position: relative;
+  top: 5px;
+  opacity: 0;
+  z-index: 11;
+}
+
+#sub-container-4 input:checked+span {
+  transform: scale(0.7);
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px #000;
+}
+
+.controls {
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}
+
+.controls .c-btn {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(144, 144, 144);
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.c-btn.active {
+  background-color: white;
+}
